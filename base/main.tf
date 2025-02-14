@@ -2,8 +2,8 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_s3_bucket" "dana1" {
-  bucket = "bucket1"
+resource "aws_s3_bucket" "bucket-new" {
+  bucket = "bucket-new"
 
   /*tags = {
     Name        = "ffff"
