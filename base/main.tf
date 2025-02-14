@@ -1,3 +1,12 @@
+resource "aws_s3_bucket" "dana1" {
+  bucket = "bucket1"
+
+  /*tags = {
+    Name        = "ffff"
+    Environment = "Dev"
+  }*/
+}
+
 variable "module_name" {
   description = "The name of the module"
   default = "test_module_name"
