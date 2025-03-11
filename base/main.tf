@@ -68,6 +68,15 @@ resource "random_string" "example" {
   numeric  = true
 }
 
+resource "random_string" "example-new" {
+  count = 2 
+  length  = 16
+  special = false
+  upper   = true
+  lower   = true
+  numeric  = true
+}
+
 output "resource_output" {
   value = {
     module_name = var.module_name
